@@ -1,14 +1,25 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Trivia</title>
 </head>
+    
 <body>
-    <form action="/" method="post">
-        <label for="nombre">Ingrese una opcion:</label>
-        <input type="text" id="" name="" ><br>
-    </form><br>
+    <p> {{ f }} </p>
+    <p> {{ p }} </p>
+
+    <form action="/add" method="post">
+        <label for="opcion">Ingrese una opcion:</label>
+        <input type="text" id="opcion" name="opcion" ><br>
+    </form><br> 
+    <p>{{n_variable}}</p>
+    <p>puntaje:</p>
+    <p>{{punt_variable}}</p>
+    
+    <form action="/">        
+        <input type="hidden" name="finalizar" value="true">
+        <input type="submit" value="Finalizar el juego">
+    </form>
 </body>
 </html>

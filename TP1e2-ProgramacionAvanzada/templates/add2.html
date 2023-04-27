@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,13 @@
 </head>
 <body>
     <p>Mostrando historial</p>
-    <form action="/" method="post">
-    </form><br>
+    <ul>
+        {% for usuario in usuarios %}
+            <li>{{ usuario }}</li>
+        {% endfor %}
+    </ul>
+    <form action="/">
+        <input type="submit" value="Volver a la pagina principal">
+    </form>
 </body>
 </html>
