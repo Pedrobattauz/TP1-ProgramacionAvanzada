@@ -18,3 +18,15 @@ def porcentual(lista,ref):
         caidaporc=((lista[i]-ref)/ref)*100
         caida_porcentual.append(caidaporc)
     return caida_porcentual
+
+def porcentaje_caida(l): 
+    #p=[i[1] for i in l]
+    minimo=min(l);maximo=max(l)
+    r=round((minimo/maximo)*100,2)
+    return r
+
+def porcentaje_repunte(l): 
+#     p=[i[1] for i in l]
+    minimo=min(l)
+    r=round(((l[-1]-minimo)/minimo *100),2)
+    return r
